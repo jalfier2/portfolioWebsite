@@ -18,6 +18,9 @@
   --lightGrey: #ABAAAA; 
   --white: #ffffff;
   --black: #000000; 
+
+  --body-font: 'Blinker', sans-serif;
+--header-font: 'Overpass', sans-serif;
 }
 
 
@@ -89,11 +92,11 @@
 
 body {
   margin: 0;
-  font-family: var(--bs-body-font-family);
+  font-family: var(--body-font);
   font-size: var(--bs-body-font-size);
   font-weight: var(--bs-body-font-weight);
   line-height: var(--bs-body-line-height);
-  color: var(--bs-body-color);
+  color: var(--midGrey);
   text-align: var(--bs-body-text-align);
   background-color: var(--bs-body-bg);
   -webkit-text-size-adjust: 100%;
@@ -11340,7 +11343,7 @@ p {
 #mainNav {
   padding-top: 1rem;
   padding-bottom: 1rem;
-  background-color: #212529;
+  background-color: #000000;
 }
 #mainNav .navbar-toggler {
   padding: 0.75rem;
@@ -11388,7 +11391,7 @@ p {
   #mainNav.navbar-shrink {
     padding-top: 1rem;
     padding-bottom: 1rem;
-    background-color: #212529;
+    background-color: rgba(0, 0, 0, 0.7);
   }
   #mainNav.navbar-shrink .navbar-brand {
     font-size: 1.25em;
@@ -11409,7 +11412,7 @@ header.masthead {
   padding-bottom: 6rem;
   text-align: center;
   color: #fff;
-  background-image: url("../assets/img/header-bg.jpg");
+  background-image: url("../assets/img/bkacground-temp.jpg");
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
@@ -11479,7 +11482,7 @@ header.masthead .masthead-heading {
 #portfolio .portfolio-item .portfolio-caption {
   padding: 1.5rem;
   text-align: center;
-  background-color: #fff;
+  background-color: #var(--black);
 }
 #portfolio .portfolio-item .portfolio-caption .portfolio-caption-heading {
   font-size: 1.5rem;
