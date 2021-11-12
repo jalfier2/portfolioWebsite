@@ -7,7 +7,14 @@
 // Scripts
 // 
 
-window.addEventListener('DOMContentLoaded', event => {
+window.addEventListener('load', function() {
+
+      // try to get the loading thing to work.... 
+
+    console.log("page has loaded")
+
+    document.getElementsByClassName("header.masthead").style.backgroundColor = "red";
+  // When the page has loaded 
 
     // Navbar shrink function
     var navbarShrink = function () {
@@ -52,3 +59,25 @@ window.addEventListener('DOMContentLoaded', event => {
     });
 
 });
+
+/// Form Submission
+$(function () {
+
+    $('#contactForm').on('submit', function (e) {
+
+      e.preventDefault();
+
+      $.ajax({
+        type: 'post',
+        url: 'assets/contact.php',
+        data: $('#contactForm').serialize(),
+        success: function () {
+          alert('form was submitted');
+        }
+      });
+
+    });
+
+  });
+
+
