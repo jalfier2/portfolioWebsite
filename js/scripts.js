@@ -7,6 +7,8 @@
 // Scripts
 // 
 
+
+
 window.addEventListener('load', function() {
 
       // try to get the loading thing to work.... 
@@ -59,7 +61,7 @@ window.addEventListener('load', function() {
     });
 
 });
-
+const modal = document.body.querySelector('#submitSuccess');
 /// Form Submission
 $(function () {
 
@@ -72,7 +74,8 @@ $(function () {
         url: 'assets/contact.php',
         data: $('#contactForm').serialize(),
         success: function () {
-          alert('form was submitted');
+            alert.("Submission Sent!");
+           // modal.style.display = "block";
         }
       });
 
