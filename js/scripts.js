@@ -15,7 +15,6 @@ window.addEventListener('load', function() {
 
     console.log("page has loaded")
 
-    document.getElementsByClassName("header.masthead").style.backgroundColor = "red";
   // When the page has loaded 
 
     // Navbar shrink function
@@ -61,7 +60,7 @@ window.addEventListener('load', function() {
     });
 
 });
-const modal = document.body.querySelector('#submitSuccess');
+// const modal = document.body.querySelector('#submitSuccess');
 /// Form Submission
 $(function () {
 
@@ -74,7 +73,7 @@ $(function () {
         url: 'assets/contact.php',
         data: $('#contactForm').serialize(),
         success: function () {
-            alert.("Submission Sent!");
+            alert("Submission Sent!");
            // modal.style.display = "block";
         }
       });
