@@ -60,7 +60,7 @@ window.addEventListener('load', function() {
     });
 
 });
-// const modal = document.body.querySelector('#submitSuccess');
+const modal = document.body.querySelector('#submitSuccess');
 /// Form Submission
 $(function () {
 
@@ -74,7 +74,7 @@ $(function () {
         data: $('#contactForm').serialize(),
         success: function () {
             alert("Submission Sent!");
-           // modal.style.display = "block";
+           modal.style.display = "block";
         }
       });
 

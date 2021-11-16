@@ -46,7 +46,6 @@
     }
 
     $recipient = "jalfier2@confederationcollege.ca";
-    //$recipient = "daniel.hansen@confederationcollege.ca";
     $email_title = "Portfolio Contact Form Submission";
     $email_body .= "</div>";
  
@@ -55,7 +54,7 @@
     .'From: ' . $email . "\r\n";
       
     if(mail($recipient, $email_title, $email_body, $headers)) {
-        echo "<p>Thank you for contacting us, $name. You will get a reply within 24 hours.</p>";
+        echo "<p>Thank you for contacting ALFdesigns, $name. You will get a reply within 24 hours.</p>";
     } else {
         echo '<p>We are sorry but the email did not go through.</p>';
     }
