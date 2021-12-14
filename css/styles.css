@@ -18,9 +18,8 @@
   --lightGrey: #ABAAAA; 
   --white: #ffffff;
   --black: #000000; 
-
   --body-font: 'Blinker', sans-serif;
---header-font: 'Overpass', sans-serif;
+  --header-font: 'Overpass', sans-serif;
 }
 
 
@@ -153,6 +152,17 @@ hr:not([size]) {
 video {
   width: 100%;
   height: auto;
+}
+.ytVideo {
+  padding: 41.67% 0 0 0; 
+  position: relative; 
+}
+.iframeYT {
+  position: absolute;
+  top: 0; 
+  left: 0; 
+  width: 100%; 
+  height: 100%;
 }
 
 h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
